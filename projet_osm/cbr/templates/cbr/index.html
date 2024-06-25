@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /* Google fonts - Open Sans */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/* colors */
+/* body */
+body {
+  background: rgba(0, 0, 0, 0.9);
+  font-family: "Open Sans", sans-serif;
+}
+
+.first a {
+  color: #5ec045;
+}
+
+.first a:hover {
+  color: #518b49;
+}
+.scnd a {
+  color:#2a8b61
+}
+.scnd a:hover {
+  color: #33e296;
+}
+.mid a {
+  color: #599fe0;
+}
+
+.mid a:hover {
+  color: #00a2ff;
+}
+
+.last a {
+  color: rgba(231, 196, 104, 0.7);
+}
+
+.last a:hover {
+  color: rgba(201, 154, 32, 0.7);
+}
+
+.end a {
+  color: #eb7655;
+}
+
+.end a:hover {
+  color: #c33d17;
+}
+
+/* wrapper */
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto 100px auto;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  position: relative;
+}
+
+/* lists */
+.row ul {
+  margin: 0;
+  padding: 0;
+}
+
+.row ul li {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  list-style: none;
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+.fst ul li{
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  list-style: none;
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+}
+#mes{
+    margin-left:95px;
+}
+.fst{
+    padding: 20px 0;
+    height: 30px;
+    font-size: 0;
+    position:relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.row ul li {
+  padding: 5px 10px;
+}
+
+/* rows */
+.row {
+  padding: 20px 0;
+  height: 30px;
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.row:hover {
+  background-color: rgba(26, 26, 26, 0.9);
+  height: 45px;
+}
+
+.title {
+  padding: 10px 0 5px 0;
+  height: 45px;
+  font-size: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.title:hover {
+  height: 45px;
+  background-color: rgba(218, 207, 54, 0.432);
+  border-left: 3px solid rgb(227, 243, 10);
+}
+.type{
+
+}
+.first {
+  border-left: 3px solid #35b346;
+}
+
+.first:hover {
+  border-left: 3px solid #48db1b;
+}
+.scnd {
+  border-left: 3px solid #2a8b61;
+}
+.scnd:hover{
+  border-left: solid #33e296;
+}
+.mid {
+  border-left: 3px solid #1d5b6e;
+}
+
+.mid:hover {
+  border-left: 3px solid #1c52e7;
+}
+
+.last {
+  border-left: 3px solid rgba(157, 121, 25, 0.7);
+}
+
+.last:hover {
+  border-left: 3px solid rgba(231, 196, 104, 0.7);
+}
+
+.end {
+  border-left: 3px solid #952f12;
+}
+
+.end:hover {
+  border-left: 3px solid #eb7655;
+}
+    </style>
+<section class="wrapper">
+    <!-- Row title -->
+    <main class="fst">
+      <ul>
+        <li>Mês</li>
+        <li id="mes">Setembro</li>
+      </ul>
+
+    </main>
+    <main class="row title">
+      <ul>
+          <li>  </li>
+          <li class="type">SPO</li>
+          <li class="type">SPO Academy</li>
+      </ul>
+    </main>
+    <!-- Row 1 -->
+    <article class="row first">
+      <ul>
+        <li><a>1º</a></li>
+        <li>{{data_1}}</li>
+        <li>{{data_1_academy}}</li>
+      </ul>
+    </article>
+    <!-- Row 2 -->
+    <article class="row first">
+      <ul>
+        <li><a>2º</a></li>
+        <li>{{data_2}}</li>
+        <li>{{data_2_academy}}</li>
+      </ul>
+    </article>
+    <!-- Row 3 -->
+    <article class="row first">
+      <ul>
+        <li><a>3º</a></li>
+        <li>{{data_3}}</li>
+        <li>{{data_3_academy}}</li>
+      </ul>
+    </article>
+    <!-- Row 4 -->
+    <article class="row scnd">
+      <ul>
+        <li><a>4º</a></li>
+        <li>{{data_4}}</li>
+        <li>{{data_4_academy}}</li>
+      </ul>
+    </article>
+    <!-- Row 5 -->
+    <article class="row scnd">
+      <ul>
+        <li><a>5º</a></li>
+        <li>{{data_5}}</li>
+        <li>{{data_5_academy}}</li>
+      </ul>
+    </article>
+    <!-- Row 6 -->
+    <article class="row scnd">
+      <ul>
+        <li><a>6º</a></li>
+        <li>{{data_6}}</li>
+        <li>{{data_6_academy}}</li>
+      </ul>
+    </article>
+    <!-- Row 7 -->
+    <article class="row scnd">
+      <ul>
+        <li><a>7º</a></li>
+        <li>{{data_7}}</li>
+        <li>{{data_7_academy}}</li>
+      </ul>
+    </article>
+    <!-- Row 8 -->
+    <article class="row mid">
+      <ul>
+        <li><a>8º</a></li>
+        <li>{{data_8}}</li>
+        <li>{{data_8_academy}}</li>
+      </ul>
+    </article>
+    <!-- Row 9 -->
+    <article class="row mid">
+      <ul>
+        <li><a>9º</a></li>
+        <li>{{data_9}}</li>
+        <li>{{data_9_academy}}</li>
+      </ul>
+    </article>
+    <article class="row mid">
+      <ul>
+        <li><a>10º</a></li>
+        <li>{{data_10}}</li>
+        <li>{{data_10_academy}}</li>
+      </ul>
+    </article>
+    <article class="row mid">
+      <ul>
+        <li><a>11º</a></li>
+        <li>{{data_11}}</li>
+        <li>{{data_11_academy}}</li>
+      </ul>
+    </article>
+    <article class="row mid">
+      <ul>
+        <li><a>12º</a></li>
+        <li>{{data_12}}</li>
+        <li>{{data_12_academy}}</li>
+      </ul>
+    </article>
+    <article class="row mid">
+      <ul>
+        <li><a>13º</a></li>
+        <li>{{data_13}}</li>
+        <li>{{data_13_academy}}</li>
+      </ul>
+    </article>
+    <article class="row mid">
+      <ul>
+        <li><a>14º</a></li>
+        <li>{{data_14}}</li>
+        <li>{{data_14_academy}}</li>
+      </ul>
+    </article>
+    <article class="row mid">
+      <ul>
+        <li><a>15º</a></li>
+        <li>{{data_15}}</li>
+        <li>{{data_15_academy}}</li>
+      </ul>
+    </article>
+    <article class="row last">
+      <ul>
+        <li><a>16º</a></li>
+        <li>{{data_16}}</li>
+        <li>{{data_16_academy}}</li>
+      </ul>
+    </article>
+    <article class="row last">
+      <ul>
+        <li><a>17º</a></li>
+        <li>{{data_17}}</li>
+        <li>{{data_17_academy}}</li>
+      </ul>
+    </article>
+    <article class="row last">
+      <ul>
+        <li><a>18º</a></li>
+        <li>{{data_18}}</li>
+        <li>{{data_18_academy}}</li>
+      </ul>
+    </article>
+    <article class="row last">
+      <ul>
+        <li><a>19º</a></li>
+        <li>{{data_19}}</li>
+        <li>{{data_19_academy}}</li>
+      </ul>
+    </article>
+    <article class="row last">
+      <ul>
+        <li><a>20º</a></li>
+        <li>{{data_20}}</li>
+        <li>{{data_20_academy}}</li>
+      </ul>
+    </article>
+    <article class="row last">
+      <ul>
+        <li><a>21º</a></li>
+        <li>{{data_21}}</li>
+        <li>{{data_21_academy}}</li>
+      </ul>
+    </article>
+    <article class="row end">
+      <ul>
+        <li><a>22º</a></li>
+        <li>{{data_22}}</li>
+        <li>{{data_22_academy}}</li>
+      </ul>
+    </article>
+    <article class="row end">
+      <ul>
+        <li><a>23º</a></li>
+        <li>{{data_23}}</li>
+        <li>{{data_23_academy}}</li>
+      </ul>
+    </article>
+    <article class="row end">
+      <ul>
+        <li><a>24º</a></li>
+        <li>{{data_24}}</li>
+        <li>{{data_24_academy}}</li>
+      </ul>
+    </article>
+  </section>
+</html>
