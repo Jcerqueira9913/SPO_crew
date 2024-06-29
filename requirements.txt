@@ -1,5 +1,6 @@
 asgiref==3.8.1
 bs4
+gunicorn
 attrs==23.2.0
 cryptography==42.0.8
 Django==5.0.6
